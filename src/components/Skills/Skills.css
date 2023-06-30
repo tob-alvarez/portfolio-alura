@@ -1,0 +1,9 @@
+
+.logoSkill{
+    height: 90px;
+    width: 70px;
+}
+.logoSkill:hover{
+    scale: 1.4;
+    transition: .2s;
+}

@@ -1,0 +1,23 @@
+.fotoPerfil{
+    width: 200px;
+    height: 300px;
+    width: fit-content;
+    border-radius: 50%;
+}
+.infoSobreMi{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.links-social a{
+    text-decoration: none;
+    color: #000;
+}
+.links-social a:hover{
+    scale: 1.2;
+    transition: 0.2s;
+}
+.contenedorSobreMi{
+    padding: 32px 0px;
+}
