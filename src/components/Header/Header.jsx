@@ -16,12 +16,6 @@ const Header = () => {
           <a href="#">Skills</a>
         </li>
         <li>
-          <a href="#">Hobbies</a>
-        </li>
-        <li>
-          <a href="#">Formacion</a>
-        </li>
-        <li>
           <a href="#">Proyectos</a>
         </li>
         <a href="" className="mail">

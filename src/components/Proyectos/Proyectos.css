@@ -7,15 +7,23 @@
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    text-decoration: none;
     margin-right: 10px;
+    background-color: #0d6efd;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 .boton-demo{
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    text-decoration: none;
+    border: none;
+    background-color: #0d6efd;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 .descripcion-challenge{
     margin: 40px 0;
+}
+.boton-demo a , .boton-repo a{
+    text-decoration: none;
+    color: #fff;
 }
