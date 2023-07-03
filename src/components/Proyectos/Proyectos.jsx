@@ -3,7 +3,10 @@ import fotoChallenge1 from "../../assets/Captura-C1.png";
 
 const Proyectos = () => {
   return (
-    <div className="container1  d-flex justify-content-center mt-5 flex-column align-items-center">
+    <div
+      id="Proyectos"
+      className="container1  d-flex justify-content-center mt-5 flex-column align-items-center"
+    >
       <h2 className="mb-5">Proyectos</h2>
       <div className="d-flex flex-column">
         <div className="proyecto">

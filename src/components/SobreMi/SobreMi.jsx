@@ -6,9 +6,10 @@ const SobreMi = () => {
       <div className="infoSobreMi">
         <h1>Hola soy Tobias, Frontend Developer</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
-          facilis quod, eaque adipisci omnis officiis asperiores voluptatum
-          itaque aut accusantium consequatur mollitia labore, quibusdam
+          Apasionado de la tecnología y amante de la creatividad, destaco por
+          mis habilidades blandas excepcionales en comunicación, colaboración y
+          liderazgo. Mi pasión por crear aplicaciones es el motor que impulsa mi
+          búsqueda constante de soluciones innovadoras y experiencias únicas.
         </p>
         <div className="d-flex gap-4 links-social pt-4">
           <a href="https://github.com/tob-alvarez" target="blank">
