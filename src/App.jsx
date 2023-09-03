@@ -1,19 +1,22 @@
 import ContactMe from "./components/ContactMe/ContactMe";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import Layout from "./components/Layout/Layout";
 import Proyectos from "./components/Proyectos/Proyectos";
 import Skills from "./components/Skills/Skills";
 import SobreMi from "./components/SobreMi/SobreMi";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
-    <>
-      <Header></Header>
-      <SobreMi></SobreMi>
-      <Skills></Skills>
-      <Proyectos />
-      <ContactMe></ContactMe>
-      <Footer></Footer>
-    </>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<SobreMi></SobreMi>}></Route>
+          <Route path="/projects" element={<Proyectos />}></Route>
+          <Route path="/skills" element={<Skills />}></Route>
+          <Route path="/contact" element={<ContactMe />}></Route>
+        </Routes>
+      </Layout>
+    </Router>
   );
 };
 

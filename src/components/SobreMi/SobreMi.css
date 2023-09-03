@@ -1,8 +1,10 @@
 .fotoPerfil{
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     width: fit-content;
     border-radius: 50%;
+    border: 5px solid #ccc;
+    filter: grayscale(.9);
 }
 .infoSobreMi{
     width: 800px;
@@ -12,7 +14,9 @@
 }
 .links-social a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-family: 'Roboto', cursive;
+    font-size: 20px;
 }
 .links-social a:hover{
     scale: 1.2;
@@ -21,4 +25,14 @@
 .contenedorSobreMi{
     padding: 32px 0px;
     width: 70%;
+}
+.nombreHome{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.infoHome p{
+    font-family: 'Roboto', cursive;
+    font-size: 25px;
+    
 }
