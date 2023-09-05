@@ -11,7 +11,6 @@ const Proyectos = () => {
   const contenedorRef = useRef(null);
 
   useEffect(() => {
-    // Agregar un manejador de eventos de clic al documento para cerrar el proyecto cuando se haga clic fuera de él.
     const handleClickOutside = (event) => {
       if (
         contenedorRef.current &&
@@ -20,11 +19,7 @@ const Proyectos = () => {
         setProyectoAbierto(null);
       }
     };
-
-    // Agregar el manejador de eventos de clic cuando se monta el componente.
     document.addEventListener("mousedown", handleClickOutside);
-
-    // Eliminar el manejador de eventos de clic cuando se desmonta el componente.
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -56,9 +51,9 @@ const Proyectos = () => {
             animate={
               estaAbierto("proyecto1")
                 ? {
-                    scale: 2,
-                    translateX: 100,
-                    translateY: 150,
+                    scale: 1.2,
+                    translateX: 0,
+                    translateY: 0,
                     zIndex: 1,
                   }
                 : { scale: 1 }
@@ -90,9 +85,9 @@ const Proyectos = () => {
             animate={
               estaAbierto("proyecto2")
                 ? {
-                    scale: 2,
-                    translateX: -450,
-                    translateY: 150,
+                    scale: 1.2,
+                    translateX: 0,
+                    translateY: 0,
                     zIndex: 1,
                   }
                 : { scale: 1 }
@@ -124,9 +119,9 @@ const Proyectos = () => {
             animate={
               estaAbierto("proyecto3")
                 ? {
-                    scale: 2,
-                    translateX: 100,
-                    translateY: -150,
+                    scale: 1.2,
+                    translateX: 0,
+                    translateY: 0,
                     zIndex: 1,
                   }
                 : { scale: 1 }
@@ -158,9 +153,9 @@ const Proyectos = () => {
             animate={
               estaAbierto("proyecto4")
                 ? {
-                    scale: 2,
-                    translateX: -450,
-                    translateY: -150,
+                    scale: 1.2,
+                    translateX: 0,
+                    translateY: 0,
                     zIndex: 1,
                   }
                 : { scale: 1 }

@@ -1,33 +1,54 @@
-.contenedorLayout{
-    gap: 40px;
-    width: 30%;
+.contenedorLayout {
+  gap: 40px;
+  width: 20%;
 }
-.children{
-    width: 70%;
+.children {
+  width: 80%;
 }
-.contenedorLayout h1{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 50px;
+.contenedorLayout h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
 }
-.linksLayout{
-    list-style: none;
-    font-size: 20px;
-    padding-left: 0;
-    width: fit-content;
-    cursor: pointer;
+.linksLayout {
+  list-style: none;
+  font-size: 20px;
+  padding-left: 0;
+  width: fit-content;
+  cursor: pointer;
 }
-.cajaLink{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-    text-decoration: none;
-    color: #fff;
+.cajaLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
 }
-.cajaLink:hover{
-    scale: 1.2;
-    transition: .4s;
+.cajaLink:hover {
+  scale: 1.2;
+  transition: 0.4s;
 }
-.cajaLink p{
-    margin: 0;
+.cajaLink p {
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .children {
+    width: 100% !important;
+  }
+  .contenedorLayout {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .contenedorLayout h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .linksLayout {
+    text-align: center;
+    font-size: 15px;
+  }
+  footer {
+    font-size: 10px;
+  }
 }

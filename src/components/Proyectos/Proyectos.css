@@ -40,3 +40,38 @@
   text-decoration: none;
   color: #fff;
 }
+@media screen and (max-width: 1150px) {
+  .contenedorProyecto {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .foto-challenge-1 {
+    width: 400px;
+    height: 100px;
+  }
+  .spanProyecto1 {
+    flex-direction: row;
+  }
+  .botonSpan {
+    width: 100px;
+  }
+  span h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .foto-challenge-1 {
+    width: 300px;
+    height: 100px;
+  }
+  .botonSpan {
+    width: fit-content;
+    padding: 5px;
+  }
+  span h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+}
