@@ -1,29 +1,42 @@
-.foto-challenge-1{
-    width: 500px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+.foto-challenge-1 {
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
-.boton-repo{
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    margin-right: 10px;
-    background-color: #0d6efd;
-    border: none;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+.foto-challenge-1:hover {
+  filter: none;
+  cursor: pointer;
 }
-.boton-demo{
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-    background-color: #0d6efd;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+.contenedorProyecto {
+  flex-wrap: wrap;
 }
-.descripcion-challenge{
-    margin: 40px 0;
+
+.spanProyecto1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
-.boton-demo a , .boton-repo a{
-    text-decoration: none;
-    color: #fff;
+
+.botonSpan {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  color: #fff;
+  background-color: black;
+  border: 1px solid #fff;
+}
+.botonSpan a {
+  text-decoration: none;
+  color: #fff;
 }

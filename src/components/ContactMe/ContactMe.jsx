@@ -5,41 +5,49 @@ const ContactMe = () => {
     <>
       <form
         id="Contact"
-        className="container1 d-flex flex-column contenedor-contact mt-5"
+        className="container-fluid d-flex flex-column align-items-center justify-content-center container1"
+        style={{ backgroundColor: "#141414", height: "100vh" }}
       >
         <p className="tituloContact">Contact Me</p>
-        <label>Nombre</label>
-        <input
-          required
-          className="inputContacto mt-1 mb-1"
-          type="text"
-          placeholder="Ej: Tobias"
-        />
-        <label>E-mail</label>
-        <input
-          required
-          className="inputContacto mt-1 mb-1"
-          type="mail"
-          placeholder="texto@texto.com"
-        />
-        <label>Asunto</label>
-        <input
-          required
-          className="inputContacto mt-1 mb-1"
-          type="text"
-          placeholder="Ej: Trabajo"
-        />
-        <label>Mensaje</label>
-        <input
-          required
-          className="inputContacto mt-1 mb-1"
-          type="text"
-          placeholder="Mensaje..."
-        />
+        <div className="d-flex flex-column">
+          <label>Nombre</label>
+          <input
+            required
+            className="inputContacto mt-1 mb-1"
+            type="text"
+            placeholder="Ej: Tobias"
+          />
+        </div>
+        <div className="d-flex flex-column">
+          <label>E-mail</label>
+          <input
+            required
+            className="inputContacto mt-1 mb-1"
+            type="mail"
+            placeholder="texto@texto.com"
+          />
+        </div>
+        <div className="d-flex flex-column">
+          <label>Asunto</label>
+          <input
+            required
+            className="inputContacto mt-1 mb-1"
+            type="text"
+            placeholder="Ej: Trabajo"
+          />
+        </div>
+        <div className="d-flex flex-column">
+          <label>Mensaje</label>
+          <textarea
+            required
+            className="inputContacto textarea-input mt-1 mb-1"
+            type="text"
+            placeholder="Mensaje..."
+          />
+        </div>
         <button type="submit" className="botonEnviarForm mt-2">
           Enviar
         </button>
-        <p className="mt-3">hola</p>
       </form>
     </>
   );
