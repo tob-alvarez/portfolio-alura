@@ -2,6 +2,7 @@ import "./Proyectos.css";
 import fotoChallenge1 from "../../assets/Captura-C1.png";
 import fotoChallenge2 from "../../assets/alurageek.png";
 import fotoChallenge3 from "../../assets/Captura de pantalla 2023-08-28 185559.png";
+import fotoChallenge4 from "../../assets/Captura de pantalla 2023-09-05 212202.png";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -175,7 +176,7 @@ const Proyectos = () => {
               <></>
             )}
             <img
-              src={fotoChallenge1}
+              src={fotoChallenge4}
               alt="foto challenge alura #1"
               className="foto-challenge-1"
             />

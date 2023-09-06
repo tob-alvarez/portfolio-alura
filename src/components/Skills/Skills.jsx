@@ -7,7 +7,7 @@ import jsLogo from "../../assets/js.svg";
 
 const Skills = () => {
   return (
-    <div className="container1 contenedorSkills d-flex justify-content-center mt-5 flex-column align-items-center">
+    <div className="container1 contenedorSkills d-flex justify-content-center flex-column align-items-center">
       <h2 className="mb-5">Skills</h2>
       <div className="d-flex gap-5 skillsIconos">
         <div>

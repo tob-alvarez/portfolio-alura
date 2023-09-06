@@ -1,9 +1,12 @@
-
-.logoSkill{
-    height: 90px;
-    width: 70px;
+.logoSkill {
+  height: 90px;
+  width: 70px;
 }
-.logoSkill:hover{
-    scale: 1.4;
-    transition: .2s;
+.logoSkill:hover {
+  scale: 1.4;
+  transition: 0.2s;
+}
+.contenedorSkills {
+  background-color: #141414;
+  height: 100vh;
 }

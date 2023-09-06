@@ -7,14 +7,14 @@ const SobreMi = () => {
       style={{ backgroundColor: "#141414", height: "100vh" }}
     >
       <div className="d-flex w-100">
-        <div className="w-25 d-flex justify-content-center align-items-center">
+        <div className="d-flex justify-content-center align-items-center contenedorImagenInfo">
           <img
             src="https://avatars.githubusercontent.com/u/89598971?v=4"
             alt="Foto Perfil"
             className="fotoPerfil"
           />
         </div>
-        <div className="w-75 p-3 infoHome">
+        <div className="p-3 infoHome">
           <h1 className="nombreHome">I am Tobias, Frontend Developer</h1>
           <p>
             Apasionado de la tecnología y amante de la creatividad, destaco por

@@ -4,6 +4,7 @@ import { faEnvelope, faUser } from "@fortawesome/free-regular-svg-icons";
 import { faBrain, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import ButtonToggle from "../ButtonToggle/ButtonToggle";
 
 const Layout = ({ children }) => {
   const [windowsWidth, setWindowsWidth] = useState(window.innerWidth);
@@ -20,9 +21,9 @@ const Layout = ({ children }) => {
   }, []);
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center layoutHeight">
+      <div className="contenedorMenu layoutHeight">
         {windowsWidth <= 768 ? (
-          <></>
+          <ButtonToggle></ButtonToggle>
         ) : (
           <div className=" d-flex flex-column justify-content-around align-items-center contenedorLayout">
             <h1>TOB DEVELOPER</h1>
