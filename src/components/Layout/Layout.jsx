@@ -26,7 +26,6 @@ const Layout = ({ children }) => {
           <ButtonToggle></ButtonToggle>
         ) : (
           <div className=" d-flex flex-column justify-content-around align-items-center contenedorLayout">
-            <h1>TOB DEVELOPER</h1>
             <div className="linksLayout">
               <Link className="cajaLink" to="/">
                 <FontAwesomeIcon icon={faUser} />

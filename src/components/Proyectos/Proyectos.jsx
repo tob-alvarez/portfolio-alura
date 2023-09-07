@@ -1,8 +1,8 @@
 import "./Proyectos.css";
-import fotoChallenge1 from "../../assets/Captura-C1.png";
+import fotoChallenge1 from "../../assets/encriptador.png";
 import fotoChallenge2 from "../../assets/alurageek.png";
-import fotoChallenge3 from "../../assets/Captura de pantalla 2023-08-28 185559.png";
-import fotoChallenge4 from "../../assets/Captura de pantalla 2023-09-05 212202.png";
+import fotoChallenge3 from "../../assets/toblfix.webp";
+import fotoChallenge4 from "../../assets/sisCom.webp";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -40,9 +40,10 @@ const Proyectos = () => {
       className="container-fluid d-flex flex-column align-items-center justify-content-center container1"
       style={{ backgroundColor: "#141414", minHeight: "100vh" }}
     >
-      <div className="d-flex justify-content-around w-100">
+      <div className="d-flex flex-column justify-content-around w-100">
+        <h2 className="text-center pb-4 nombreHome">Projects</h2>
         <div
-          className="contenedorProyecto d-flex justify-content-around gap-5"
+          className="contenedorProyecto w-100 d-flex justify-content-around gap-5"
           ref={contenedorRef}
         >
           <motion.div

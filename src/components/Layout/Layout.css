@@ -1,14 +1,11 @@
 .contenedorLayout {
   gap: 40px;
-  width: 20%;
+  width: 15%;
 }
 .children {
-  width: 80%;
+  width: 85%;
 }
-.contenedorLayout h1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 50px;
-}
+
 .linksLayout {
   list-style: none;
   font-size: 20px;
@@ -45,10 +42,6 @@
   }
 }
 @media screen and (max-width: 1300px) {
-  .contenedorLayout h1 {
-    text-align: center;
-    font-size: 30px;
-  }
   .linksLayout {
     text-align: center;
     font-size: 15px;

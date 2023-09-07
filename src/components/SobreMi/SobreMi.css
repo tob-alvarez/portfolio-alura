@@ -1,16 +1,9 @@
-.fotoPerfil {
-  width: 250px;
-  height: 250px;
-  width: fit-content;
-  border-radius: 50%;
-  border: 5px solid #ccc;
-  filter: grayscale(0.9);
-}
-.infoSobreMi {
-  width: 800px;
+.infoHome {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .links-social a {
   text-decoration: none;
@@ -20,29 +13,38 @@
 }
 .links-social a:hover {
   scale: 1.2;
+  border-bottom: 1px solid #ccc;
   transition: 0.2s;
 }
 .contenedorSobreMi {
   padding: 32px 0px;
-  width: 70%;
+  width: 60%;
 }
 .nombreHome {
   font-family: "Shadows Into Light", cursive;
-  font-size: 50px;
-  padding-bottom: 10px;
+  font-size: 60px;
+  text-align: center;
+}
+.Typewriter {
+  min-height: 100px !important;
 }
 .infoHome p {
   font-family: "Roboto", cursive;
-  font-size: 25px;
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
 }
 @media screen and (max-width: 1200px) {
   .fotoPerfil {
     width: 150px;
     height: 150px;
   }
+  .nombreHome {
+    font-size: 40px;
+  }
   .infoHome p {
     font-family: "Roboto", cursive;
-    font-size: 18px;
+    font-size: 14px;
   }
   .links-social a {
     font-size: 15px;
@@ -51,5 +53,8 @@
 @media screen and (max-width: 768px) {
   .fotoPerfil {
     display: none;
+  }
+  .nombreHome {
+    font-size: 30px;
   }
 }

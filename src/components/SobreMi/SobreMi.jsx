@@ -1,4 +1,5 @@
 import "./SobreMi.css";
+import Typewriter from "typewriter-effect";
 
 const SobreMi = () => {
   return (
@@ -7,15 +8,17 @@ const SobreMi = () => {
       style={{ backgroundColor: "#141414", height: "100vh" }}
     >
       <div className="d-flex w-100">
-        <div className="d-flex justify-content-center align-items-center contenedorImagenInfo">
-          <img
-            src="https://avatars.githubusercontent.com/u/89598971?v=4"
-            alt="Foto Perfil"
-            className="fotoPerfil"
+        <div className="p-5 infoHome">
+          <Typewriter
+            options={{
+              strings: [
+                "<span class='nombreHome'>I am Tobias, Frontend Developer</span>",
+                "<span class='nombreHome'>Let's build something great !</span>",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
           />
-        </div>
-        <div className="p-3 infoHome">
-          <h1 className="nombreHome">I am Tobias, Frontend Developer</h1>
           <p>
             Apasionado de la tecnología y amante de la creatividad, destaco por
             mis habilidades blandas excepcionales en comunicación, colaboración
@@ -23,7 +26,7 @@ const SobreMi = () => {
             impulsa mi búsqueda constante de soluciones innovadoras y
             experiencias únicas.
           </p>
-          <div className="d-flex gap-4 links-social pt-4 justify-content-end pe-5">
+          <div className="d-flex gap-4 links-social pt-4">
             <a href="https://github.com/tob-alvarez" target="blank">
               GitHub
             </a>

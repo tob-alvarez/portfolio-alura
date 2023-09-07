@@ -2,7 +2,7 @@ import "./Skills.css";
 import htmlLogo from "../../assets/html.svg";
 import reactLogo from "../../assets/react.svg";
 import nodeLogo from "../../assets/nodejs.svg";
-import cssLogo from "../../assets/css-file 1.svg";
+import cssLogo from "../../assets/css.svg";
 import jsLogo from "../../assets/js.svg";
 
 const Skills = () => {
