@@ -4,11 +4,12 @@ import fotoChallenge2 from "../../assets/alurageek.png";
 import fotoChallenge3 from "../../assets/toblfix.webp";
 import fotoChallenge4 from "../../assets/sisCom.webp";
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+import { Contexto } from "../../context/Contexto";
 
 const Proyectos = () => {
   const [proyectoAbierto, setProyectoAbierto] = useState(null);
-
+  const { dark } = useContext(Contexto);
   const contenedorRef = useRef(null);
 
   useEffect(() => {
@@ -38,7 +39,11 @@ const Proyectos = () => {
   return (
     <section
       className="container-fluid d-flex flex-column align-items-center justify-content-center container1"
-      style={{ backgroundColor: "#141414", minHeight: "100vh" }}
+      style={
+        dark
+          ? { backgroundColor: "#141414", height: "100vh" }
+          : { backgroundColor: "#f4f4f4", height: "100vh" }
+      }
     >
       <div className="d-flex flex-column justify-content-around w-100">
         <h2 className="text-center pb-4 nombreHome">Projects</h2>

@@ -1,14 +1,22 @@
+import { useContext } from "react";
 import "./SobreMi.css";
 import Typewriter from "typewriter-effect";
+import { Contexto } from "../../context/Contexto";
 
 const SobreMi = () => {
+  const { dark } = useContext(Contexto);
+
   return (
     <div
       className="container-fluid d-flex align-items-center"
-      style={{ backgroundColor: "#141414", height: "100vh" }}
+      style={
+        dark
+          ? { backgroundColor: "#141414", height: "100vh" }
+          : { backgroundColor: "#f4f4f4", height: "100vh" }
+      }
     >
       <div className="d-flex w-100">
-        <div className="p-5 infoHome">
+        <div className="p-2 infoHome d-flex justify-content-center align-items-center">
           <Typewriter
             options={{
               strings: [
@@ -27,22 +35,30 @@ const SobreMi = () => {
             experiencias únicas.
           </p>
           <div className="d-flex gap-4 links-social pt-4">
-            <a href="https://github.com/tob-alvarez" target="blank">
+            <a
+              style={dark ? { color: "white" } : { color: "black" }}
+              href="https://github.com/tob-alvarez"
+              target="blank"
+            >
               GitHub
             </a>
             <a
+              style={dark ? { color: "white" } : { color: "black" }}
               href="https://www.linkedin.com/in/tobias-alvarez99/"
               target="blank"
             >
               Linkedin
             </a>
             <a
+              style={dark ? { color: "white" } : { color: "black" }}
               href="https://www.instagram.com/tob.alvarez/?hl=es-la"
               target="blank"
             >
               Instagram
             </a>
-            <a href="#">CV</a>
+            <a style={dark ? { color: "white" } : { color: "black" }} href="#">
+              CV
+            </a>
           </div>
         </div>
       </div>

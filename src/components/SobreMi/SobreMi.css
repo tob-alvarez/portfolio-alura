@@ -28,6 +28,9 @@
 .Typewriter {
   min-height: 100px !important;
 }
+.Typewriter__cursor {
+  display: none;
+}
 .infoHome p {
   font-family: "Roboto", cursive;
   font-size: 20px;
@@ -56,5 +59,6 @@
   }
   .nombreHome {
     font-size: 30px;
+    text-align: center;
   }
 }

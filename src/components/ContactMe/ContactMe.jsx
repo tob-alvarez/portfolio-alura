@@ -1,12 +1,20 @@
+import { useContext } from "react";
 import "./ContactMe.css";
+import { Contexto } from "../../context/Contexto";
 
 const ContactMe = () => {
+  const { dark } = useContext(Contexto);
+
   return (
     <>
       <form
         id="Contact"
         className="container-fluid d-flex flex-column align-items-center justify-content-center container1"
-        style={{ backgroundColor: "#141414", height: "100vh" }}
+        style={
+          dark
+            ? { backgroundColor: "#141414", height: "100vh" }
+            : { backgroundColor: "#f4f4f4", height: "100vh" }
+        }
       >
         <p className="tituloContact">Contact Me</p>
         <div className="d-flex flex-column">

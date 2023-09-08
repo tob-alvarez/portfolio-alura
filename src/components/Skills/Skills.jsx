@@ -4,10 +4,21 @@ import reactLogo from "../../assets/react.svg";
 import nodeLogo from "../../assets/nodejs.svg";
 import cssLogo from "../../assets/css.svg";
 import jsLogo from "../../assets/js.svg";
+import { useContext } from "react";
+import { Contexto } from "../../context/Contexto";
 
 const Skills = () => {
+  const { dark } = useContext(Contexto);
+
   return (
-    <div className="container1 contenedorSkills d-flex justify-content-center flex-column align-items-center">
+    <div
+      style={
+        dark
+          ? { backgroundColor: "#141414", height: "100vh" }
+          : { backgroundColor: "#f4f4f4", height: "100vh" }
+      }
+      className="container1 contenedorSkills d-flex justify-content-center flex-column align-items-center"
+    >
       <h2 className="mb-5">Skills</h2>
       <div className="d-flex gap-5 skillsIconos">
         <div>

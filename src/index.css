@@ -19,6 +19,10 @@
   background-color: #000;
   color: #fff;
 }
+.layoutHeight2 {
+  background-color: #fff;
+  color: #000;
+}
 @media screen and (max-width: 768px) {
   .layoutHeight {
     width: 100% !important;
