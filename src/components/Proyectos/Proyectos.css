@@ -1,77 +1,9 @@
 .foto-challenge-1 {
-  width: 450px;
-  height: 250px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
+  object-fit: contain;
 }
 .foto-challenge-1:hover {
   filter: none;
   cursor: pointer;
-}
-.contenedorProyecto {
-  flex-wrap: wrap;
-}
-
-.spanProyecto1 {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  color: #fff;
-  height: 100%;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.botonSpan {
-  width: 50%;
-  border-radius: 5px;
-  border: none;
-  height: 40px;
-  color: #fff;
-  background-color: black;
-  border: 1px solid #fff;
-}
-.botonSpan a {
-  text-decoration: none;
-  color: #fff;
-}
-@media screen and (max-width: 1150px) {
-  .contenedorProyecto {
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-  }
-  .foto-challenge-1 {
-    width: 400px;
-    height: 100px;
-  }
-  .spanProyecto1 {
-    flex-direction: row;
-  }
-  .botonSpan {
-    width: 100px;
-  }
-  span h4 {
-    font-size: 20px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .foto-challenge-1 {
-    width: 300px;
-    height: 100px;
-  }
-  .botonSpan {
-    width: fit-content;
-    padding: 5px;
-  }
-  span h4 {
-    font-size: 16px;
-    text-align: center;
-  }
 }

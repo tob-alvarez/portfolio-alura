@@ -49,13 +49,6 @@ const SobreMi = () => {
             >
               Linkedin
             </a>
-            <a
-              style={dark ? { color: "white" } : { color: "black" }}
-              href="https://www.instagram.com/tob.alvarez/?hl=es-la"
-              target="blank"
-            >
-              Instagram
-            </a>
             <a style={dark ? { color: "white" } : { color: "black" }} href="#">
               CV
             </a>

@@ -12,7 +12,6 @@
   font-size: 20px;
 }
 .links-social a:hover {
-  scale: 1.2;
   border-bottom: 1px solid #ccc;
   transition: 0.2s;
 }
@@ -38,10 +37,6 @@
   width: 80%;
 }
 @media screen and (max-width: 1200px) {
-  .fotoPerfil {
-    width: 150px;
-    height: 150px;
-  }
   .nombreHome {
     font-size: 40px;
   }
@@ -54,9 +49,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .fotoPerfil {
-    display: none;
-  }
   .nombreHome {
     font-size: 30px;
     text-align: center;
