@@ -1,6 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useContext } from "react";
 import "./SobreMi.css";
-import Typewriter from "typewriter-effect";
 import { Contexto } from "../../context/Contexto";
 
 const SobreMi = () => {
@@ -11,22 +11,16 @@ const SobreMi = () => {
       className="container-fluid d-flex align-items-center"
       style={
         dark
-          ? { backgroundColor: "#141414", height: "100vh" }
-          : { backgroundColor: "#f4f4f4", height: "100vh" }
+          ? { backgroundColor: "#202020", height: "100vh" }
+          : { backgroundColor: "#f2f2f2", height: "100vh" }
       }
     >
       <div className="d-flex w-100">
-        <div className="p-2 infoHome d-flex justify-content-center align-items-center">
-          <Typewriter
-            options={{
-              strings: [
-                "<span class='nombreHome'>I am Tobias, Frontend Developer</span>",
-                "<span class='nombreHome'>Let's build something great !</span>",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+        <div className="infoHome d-flex justify-content-center align-items-center">
+          <h2 className="nombreHome1 pb-3">
+            I am Tobias, Frontend Developer <br />
+            Let's build something great !
+          </h2>
           <p>
             Apasionado de la tecnología y amante de la creatividad, destaco por
             mis habilidades blandas excepcionales en comunicación, colaboración

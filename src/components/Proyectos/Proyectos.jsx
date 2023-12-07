@@ -15,51 +15,43 @@ const Proyectos = () => {
       className="container-fluid d-flex flex-column align-items-center justify-content-center container1"
       style={
         dark
-          ? { backgroundColor: "#141414", height: "100vh" }
-          : { backgroundColor: "#f4f4f4", height: "100vh" }
+          ? { backgroundColor: "#202020", height: "100vh" }
+          : { backgroundColor: "#f2f2f2", height: "100vh" }
       }
     >
       <h2 className="text-center pb-4 nombreHome">Projects</h2>
       <div className="d-flex flex-column justify-content-around w-100">
-        <div className="row w-100 ps-2">
-          <div className="col-4">
+        <div className="row w-100 ps-2 d-flex justify-content-center">
+          <div className="col-3">
             <div className="card">
-              <img src={fotoChallenge4} alt="" />
+              <img src={fotoChallenge4} alt="" className="fotoChallenge" />
             </div>
           </div>
-          <div className="col-4">
-            <div className="card">
-              <div className="card">
-                <img src={fotoChallenge3} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="col-4">
-            <div className="card">
-              <div className="card">
-                <img src={fotoChallenge2} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row w-100 ps-2 mt-5">
-          <div className="col-4">
+          <div className="col-3">
             <div className="card">
               <img src={fotoChallenge3} alt="" />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-3">
             <div className="card">
-              <div className="card">
-                <img src={fotoChallenge5} alt="" />
-              </div>
+              <img src={fotoChallenge2} alt="" />
             </div>
           </div>
-          <div className="col-4">
+        </div>
+        <div className="row w-100 ps-2 mt-5 d-flex justify-content-center">
+          <div className="col-3">
             <div className="card">
-              <div className="card">
-                <img src={fotoChallenge1} className="foto-challenge-1" alt="" />
-              </div>
+              <img src={fotoChallenge3} alt="" />
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="card">
+              <img src={fotoChallenge5} alt="" />
+            </div>
+          </div>
+          <div className="col-3">
+            <div className="card">
+              <img src={fotoChallenge1} alt="" />
             </div>
           </div>
         </div>

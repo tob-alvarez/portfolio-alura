@@ -12,13 +12,13 @@ const ContactMe = () => {
         className="container-fluid d-flex flex-column align-items-center justify-content-center container1"
         style={
           dark
-            ? { backgroundColor: "#141414", height: "100vh" }
-            : { backgroundColor: "#f4f4f4", height: "100vh" }
+            ? { backgroundColor: "#202020", height: "100vh" }
+            : { backgroundColor: "#f2f2f2", height: "100vh" }
         }
       >
-        <p className="tituloContact">Contact Me</p>
+        <p className="tituloContact nombreHome">Contact Me</p>
         <div className="d-flex flex-column">
-          <label>Nombre</label>
+          <label>Name</label>
           <input
             required
             className="inputContacto mt-1 mb-1"
@@ -32,25 +32,25 @@ const ContactMe = () => {
             required
             className="inputContacto mt-1 mb-1"
             type="mail"
-            placeholder="texto@texto.com"
+            placeholder="text@text.com"
           />
         </div>
         <div className="d-flex flex-column">
-          <label>Asunto</label>
+          <label>Topic</label>
           <input
             required
             className="inputContacto mt-1 mb-1"
             type="text"
-            placeholder="Ej: Trabajo"
+            placeholder="Ej: Work"
           />
         </div>
         <div className="d-flex flex-column">
-          <label>Mensaje</label>
+          <label>Message</label>
           <textarea
             required
             className="inputContacto textarea-input mt-1 mb-1"
             type="text"
-            placeholder="Mensaje..."
+            placeholder="Put your message here..."
           />
         </div>
         <button type="submit" className="botonEnviarForm mt-2">

@@ -1,10 +1,14 @@
 .logoSkill {
-  height: 90px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
 }
 .logoSkill:hover {
   scale: 1.4;
   transition: 0.2s;
+}
+.skillsIconos {
+  width: 50%;
 }
 .contenedorSkills {
   background-color: #141414;
@@ -16,10 +20,11 @@
 }
 @media screen and (max-width: 768px) {
   .logoSkill {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
+    margin: 10px;
   }
   .skillsIconos {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 }

@@ -2,8 +2,8 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: none;
-  background-color: #000;
+  border: 1px solid #ccc;
+  background-color: transparent;
   position: absolute;
   color: #fff;
   top: 2%;
@@ -15,4 +15,5 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 1);
+  z-index: 99;
 }

@@ -1,9 +1,5 @@
-.foto-challenge-1 {
+.fotoChallenge {
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   object-fit: contain;
-}
-.foto-challenge-1:hover {
-  filter: none;
-  cursor: pointer;
 }

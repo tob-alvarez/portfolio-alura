@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Layout.css";
+import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import {
-  faEnvelope,
-  faMoon,
-  faSun,
-  faUser,
-} from "@fortawesome/free-regular-svg-icons";
-import { faBrain, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+  faBrain,
+  faBriefcase,
+  faEnvelopeCircleCheck,
+  faUserAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ButtonToggle from "../ButtonToggle/ButtonToggle";
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
               <Link className="cajaLink" to="/">
                 <FontAwesomeIcon
                   style={dark ? { color: "white" } : { color: "black" }}
-                  icon={faUser}
+                  icon={faUserAlt}
                 />
                 <p style={dark ? { color: "white" } : { color: "black" }}>
                   About
@@ -73,7 +73,7 @@ const Layout = ({ children }) => {
               <Link className="cajaLink" to="contact">
                 <FontAwesomeIcon
                   style={dark ? { color: "white" } : { color: "black" }}
-                  icon={faEnvelope}
+                  icon={faEnvelopeCircleCheck}
                 />
                 <p style={dark ? { color: "white" } : { color: "black" }}>
                   Contact
@@ -95,9 +95,7 @@ const Layout = ({ children }) => {
                 />
               )}
             </div>
-            <footer className="text-center">
-              © 2023 Tob Develop <br /> Created by Tobias Alvarez
-            </footer>
+            <footer className="text-center">© 2023 Tob Develop</footer>
           </div>
         )}
         <div className="children">{children}</div>

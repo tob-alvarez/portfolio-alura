@@ -4,12 +4,14 @@ import {
   faBriefcase,
   faSun,
   faMoon,
+  faEnvelopeCircleCheck,
+  faArrowLeft,
+  faUserAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ButtonToggle.css";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import { faEnvelope, faUser } from "@fortawesome/free-regular-svg-icons";
 import { motion } from "framer-motion";
 import { Contexto } from "../../context/Contexto";
 
@@ -29,7 +31,10 @@ const ButtonToggle = () => {
   return (
     <>
       <button className="boton-toggle" onClick={handleClick}>
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon
+          icon={faBars}
+          style={dark ? { color: "white" } : { color: "black" }}
+        />
       </button>
       {menuAbierto ? (
         <motion.div
@@ -40,6 +45,12 @@ const ButtonToggle = () => {
           }
           className=" d-flex flex-column justify-content-center align-items-center menuToggle"
         >
+          <button className="boton-toggle" onClick={handleClick}>
+            <FontAwesomeIcon
+              icon={faArrowLeft}
+              style={dark ? { color: "white" } : { color: "black" }}
+            />
+          </button>
           <h1>TOB DEVELOPER</h1>
           <div className="linksLayout m-4">
             <Link
@@ -48,7 +59,7 @@ const ButtonToggle = () => {
               className="cajaLink"
               to="/"
             >
-              <FontAwesomeIcon icon={faUser} />
+              <FontAwesomeIcon icon={faUserAlt} />
               <p>About</p>
             </Link>
             <Link
@@ -75,7 +86,7 @@ const ButtonToggle = () => {
               className="cajaLink"
               to="contact"
             >
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelopeCircleCheck} />
               <p>Contact</p>
             </Link>
           </div>
@@ -94,9 +105,7 @@ const ButtonToggle = () => {
               />
             )}
           </div>
-          <footer className="text-center">
-            © 2023 Tob Develop <br /> Created by Tobias Alvarez
-          </footer>
+          <footer className="text-center">© 2023 Tob Develop</footer>
         </motion.div>
       ) : (
         <></>
