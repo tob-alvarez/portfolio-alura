@@ -7,7 +7,7 @@
   height: 40px;
   border-radius: 5px;
   padding-left: 5px;
-  width: 400px;
+  width: 500px;
 }
 .botonEnviarForm {
   width: 100px;
@@ -25,4 +25,10 @@
 form label {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .inputContacto {
+    width: 250px;
+  }
 }

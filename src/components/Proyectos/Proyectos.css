@@ -1,5 +1,10 @@
 .fotoChallenge {
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
 }
+/* .cardProyecto {
+  height: 100%;
+  width: 100%;
+} */

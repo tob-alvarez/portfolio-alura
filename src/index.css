@@ -12,15 +12,17 @@
 .container1 {
   max-width: 100%;
   margin: 0 auto;
+  height: 100vh;
   padding: 0;
 }
 .layoutHeight {
-  height: 100vh;
   background-color: #141414;
   color: #fff;
+  height: 100vh;
 }
 .layoutHeight2 {
   background-color: #fff;
+  height: 100vh;
   color: #000;
 }
 @media screen and (max-width: 768px) {
