@@ -22,11 +22,11 @@ const SobreMi = () => {
             Let's build something great !
           </h2>
           <p>
-            Apasionado de la tecnología y amante de la creatividad, destaco por
-            mis habilidades blandas excepcionales en comunicación, colaboración
-            y liderazgo. Mi pasión por crear aplicaciones es el motor que
-            impulsa mi búsqueda constante de soluciones innovadoras y
-            experiencias únicas.
+            "Passionate about technology and a lover of creativity, I stand out
+            for my exceptional soft skills in communication, collaboration, and
+            leadership. My passion for creating applications is the driving
+            force behind my constant pursuit of innovative solutions and unique
+            experiences."
           </p>
           <div className="d-flex gap-4 links-social pt-4">
             <a

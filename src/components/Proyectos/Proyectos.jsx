@@ -1,10 +1,10 @@
 import "./Proyectos.css";
-import fotoChallenge1 from "../../assets/encriptador.png";
-import fotoChallenge2 from "../../assets/alurageek.png";
+import fotoChallenge1 from "../../assets/encriptador.webp";
+import fotoChallenge2 from "../../assets/alurageek.webp";
 import fotoChallenge3 from "../../assets/toblfix.webp";
 import fotoChallenge4 from "../../assets/sisCom.webp";
-import fotoChallenge5 from "../../assets/xgames.png";
-import fotoChallenge6 from "../../assets/teloreservo.png";
+import fotoChallenge5 from "../../assets/xgames.webp";
+import fotoChallenge6 from "../../assets/teloreservo.webp";
 import { useContext } from "react";
 import { Contexto } from "../../context/Contexto";
 
@@ -18,8 +18,8 @@ const Proyectos = () => {
         dark ? { backgroundColor: "#202020" } : { backgroundColor: "#f2f2f2" }
       }
     >
-      <h2 className="text-center pb-4 nombreHome">Projects</h2>
-      <div className="d-flex flex-column gap-2">
+      <h2 className="text-center nombreHome pb-2">Projects</h2>
+      <div className="d-flex flex-column gap-2 align-items-center justify-content-center proyectos-container">
         <div className="row w-100 ps-2 d-flex justify-content-center gap-2">
           <div className="col-8 col-md-3">
             <div className="cardProyecto">
